@@ -1,0 +1,23 @@
+
+
+entity Country {
+	countryName String
+}
+
+
+entity Location {
+	streetAddress String,
+	postalCode String,
+	city String,
+	stateProvince String
+}
+
+
+
+relationship OneToOne {
+	Country{location} to Location
+}
+
+
+
+
